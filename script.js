@@ -1,4 +1,7 @@
 function changeThemes() {
-    document.body.classList.toggle("dark");
+  document.body.classList.toggle("dark");
   }
-  /* rgb(252, 251, 222); */
+  
+ function moveToSubtitles(id) {
+  document.getElementById(id).scrollIntoView({ behavior: "smooth",});
+  }

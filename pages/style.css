@@ -2,14 +2,14 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css");
 @font-face {
   font-family: NiseSegaSonic;
-  src: url(Pacifico-Regular.ttf);
+  src: url(../../Pacifico-Regular.ttf);
 }
 html { 
     height: auto;
     width: 100%;
     margin: 0;
     background: none;
-    background-image: url(images/container-background.png);
+    background-image: url(../../images/container-background.png);
     background-attachment:fixed;
     background-position: left top;
     position:absolute;
@@ -70,7 +70,6 @@ html {
     z-index: 100;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
     height: 100px;
-    margin-bottom: 0;
    }
 
   .container {
@@ -80,22 +79,25 @@ html {
   /* background-size: 400% 400%;  */
   position: relative;
   margin-bottom: 0;
+ 
  } 
- .menu-container {
-  background: linear-gradient(230.65deg, rgb(63, 63, 61), #4e4e4d 27.49%, #252525 83.19%);
-  background-size: 400% 400%;
-  height: 36px;
-  width: 100%;
-  margin-top: 0;
-  margin-bottom: 0;
-  top:100px;
-  position: fixed;
- }
+ @keyframes change {
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
+  }
   .container-line {
      padding-top: 0.1;
      border-radius: 0;
      border-radius: 0.2;
      border-color: white;
+     margin-bottom: 0.5;
      z-index: 20;
   }
   .dark {
@@ -198,11 +200,46 @@ html {
       transform: translate(0px, 2px);
     }
   } 
-
+  .menu-container {
+    background: linear-gradient(230.65deg, rgb(63, 63, 61), #4e4e4d 27.49%, #252525 83.19%);
+    background-size: 400% 400%;
+    height: 36px;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    top:100px;
+    position: fixed;
+   }
+  .button-menu {
+    margin-top: 0;
+    padding: 0px;
+    border: 0px;
+    color: white;
+    background: #252525;
+    display: inline-block;
+    font-size: 20px;
+    font-family: "Roboto";
+    padding: 7px 2px 7px;
+    position:absolute;
+    top: -6px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #000000;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+   }
+   .button-menu:hover {
+     box-shadow: inset 0 300px 0 0 #F09B19;
+     color: black;
+     border-radius: 2px;
+   }
 .page-subtitles {
  font-size: 30px;
  margin-left: 40px;
  font-family: NiseSegaSonic;
+}
+.page-subtitles1 {
+  font-size: 21px;
+  margin-left: 40px;
+  font-weight: 500;
 }
 
 .highlights {
@@ -342,54 +379,27 @@ transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
     .first-text-posts:hover {
       box-shadow: inset 323px 0 0 0 #e1e78f;
     }
-    .second-line-divider-top {
+    .first-line-divider {
       margin-left: auto;
       margin-right: auto;
+      margin-top: 0px;
+      margin-bottom: 2px;
+      height: 5px;
+      background: linear-gradient(230.65deg,#aa7d01, #a16517, #13151b);
+      background-color: linear-gradient(230.65deg,#aa7d01, #a16517, #13151b);
       border: none;
-      background-color: #13151b;
-      height: 2px;
-      box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.5);
-      margin-top: 90px;
-    }
-    .second-line-divider-bottom {
-      margin-left: auto;
-      margin-right: auto;
-      border: none;
-      background-color: #13151b;
-      height: 2px;
-      box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.5);
-      margin-bottom: 90px;
+      margin-top: 70px;
     }
     .line-divider {
-      margin-left: 10px;
-      width: 1570px;
-      height: 52px;
+      margin-left: auto;
+      margin-right: auto;
       margin-top: 0px;
-      margin-bottom: 0px;
+      margin-bottom: 2px;
+      height: 5px;
+      background: linear-gradient(230.65deg,#aa7d01, #a16517, #13151b);
+      background-color: linear-gradient(230.65deg,#aa7d01, #a16517, #13151b);
       border: none;
     }
-    .button-menu {
-     margin-top: 0;
-     padding: 0px;
-     border: 0px;
-     color: white;
-     background: #252525;
-     display: inline-block;
-     font-size: 20px;
-     font-family: "Roboto";
-     padding: 7px 2px 7px;
-     position:absolute;
-     top: -6px;
-     cursor: pointer;
-     box-shadow: inset 0 0 0 0 #000000;
-     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-    }
-    .button-menu:hover {
-      box-shadow: inset 0 300px 0 0 #F09B19;
-      color: black;
-      border-radius: 2px;
-    }
-
     .link {
       color: black;
       text-decoration-line: none;
@@ -398,12 +408,23 @@ transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
       color: white;
       text-decoration-line: none;
     }
-    .dark .line-divider {
-      content:url(/images/Line_Design_Dark.png);
+    .link-logo {
+      color: #F09B19;
+      text-decoration-line: none;
     }
-    .dark .second-line-divider-top {
-      background-color: white;
+    .text {
+      margin-left: 20px;
+      margin-right: 20px;
+      font-size: 20px;
+      text-align: justify;
     }
-    .dark .second-line-divider-bottom {
-      background-color: white;
-    } 
+    .image {
+      align-self: center;
+      width: 560px;
+      height: 340px;
+      border-radius: 6px;
+    }
+    .center {
+      display: flex;
+      justify-content: center;
+    }

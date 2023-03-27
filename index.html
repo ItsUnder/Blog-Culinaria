@@ -1,19 +1,32 @@
 <!DOCTYPE html>
 <html> 
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo_blog.png">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <title>O Chefe Criativo</title>
     <div class="container-background">
     <div class="container"> 
-        <button class="button-theme"onclick="changeThemes()" style="cursor: pointer; float: right;"> Alterar Tema</button>
+        <button class="button-theme" onclick="changeThemes()" style="cursor: pointer; float: right;"> Alterar Tema</button>
         <img class="logo" src="images/logo_blog.png">
         <p class ="page-title">
             O Chefe Criativo
         </p>
     </div>
+    <div class="menu-container">
+        <button class="button-menu" style="margin-left:10px" onclick="moveToSubtitles('s1')">Receitas Fáceis</button>
+        <button class="button-menu" style="margin-left:160px" onclick="moveToSubtitles('s2')">Culinária Internacional</button>
+        <button class="button-menu" style="margin-left:370px" onclick="moveToSubtitles('s3')">Receitas Vegetarianas</button>
+        <button class="button-menu" style="margin-left:580px" onclick="moveToSubtitles('s4')">Sobremesas Incríveis</button>
+        <button class="button-menu" style="margin-left:780px" onclick="moveToSubtitles('s5')">Cozinha Saudável</button>
+        <button class="button-menu" style="margin-left:948px" onclick="moveToSubtitles('s6')">Comida Caseira</button>
+        <button class="button-menu" style="margin-left:1098px" onclick="moveToSubtitles('s7')">Ocasiões Especiais</button>
+      </div>
     <hr class="container-line"> 
     </div>
     <div class="space-background">
     </div>
+    <br>
+    <br>
     <div class="background">
    <div class="button placement">
     </div>
@@ -21,47 +34,54 @@
         <p class="page-subtitles" style="margin-top: 5px; margin-bottom: 0px;"> 
             Destaques
         </p>
-        <div class="highlights">
+        <a class="link" href="pages/Highlights/highlight1.html"> <div class="highlights">
         <img class="image-highlights" style="margin-left: 70px; margin-bottom: 0px;" src="https://thumbs.dreamstime.com/b/summer-bbq-food-table-hot-dog-hamburger-buffet-top-down-view-over-dark-slate-background-188460951.jpg">
         <p class="text-highlights">
             Aprenda a fazer esta deliciosa receita!
         </p>
     </div>
-    <div class="highlights" style="position: absolute; top: 60px; left: 600px">
+    </a>
+    <a class="link" href="pages/Highlights/highlight2.html"><div class="highlights" style="position: absolute; top: 60px; left: 600px">
         <img class="image-highlights" style="margin-left: 70px; margin-top: 0px; max-width: 800px;" src="https://www.assai.com.br/sites/default/files/styles/blog_destaque/public/blog/5_receitas_faceis_-_e_gostosas_-_para_quem_e_iniciante_na_cozinha01.jpg?itok=A5nbiBAP">
         <p class="text-highlights" style="right:-20px">
            Receitas Fáceis para iniciantes: 10 pratos básicos
         </p>
     </div>
-    <div class="highlights" style="position: absolute; top: 400px">
+    </a>
+    <a class="link" href="pages/Highlights/highlight3.html"><div class="highlights" style="position: absolute; top: 400px">
         <img class="image-highlights" style="margin-left: 70px; margin-top: 0px;" src="https://media.gazetadopovo.com.br/bomgourmet/2019/07/comida-caipira-a5c1ed80.jpg">
         <p class="text-highlights">
             Veja as tendências que devem bombar na <br>
             gastronomia em 2023
         </p>
     </div>
+    </a>
     <div class="space-background">
     </div>
-    <p class="page-subtitles" style="margin-top: 400px; margin-bottom: 0px;"> 
+    
+    <p id="s1" class="page-subtitles" style="margin-top: 400px; margin-bottom: 0px;"> 
         Receitas Fáceis para iniciantes
     </p>
-    
-    <div class="first-posts"> 
+    <a class="link" href="pages/ReceitasF/RF Post1.html"><div class="first-posts"> 
         <img class="image-posts" src="https://media.istockphoto.com/id/1089705568/pt/foto/brazilian-snack-cheese-bread.jpg?b=1&s=612x612&w=0&k=20&c=i7929VAj8POFw3voA44BIFsG2OLDZfNVoOSt_Kqgw9w=">
         <p class="first-text-posts">
             Receita Rápida de Pão de Queijo 
         </p>
     </div>
-    <div class="posts">
+    </a>
+    <a class="link" href="pages/ReceitasF/RF Post2.html"><div class="posts">
         <img class="image-posts" src="https://www.receitasnestle.com.br/sites/default/files/srh_recipes/6cf1bb7359f2dca08445c83ff58bf3bf.jpg">
         <p class="text-posts">
             Receita de Bolo de Brigadeiro para <br>
             qualquer um fazer!
         </p>
     </div>
-    <hr class="first-line-divider">
-    <hr class="line-divider">
-    <p class="page-subtitles" style="margin-top: 5px; margin-bottom: 0px;"> 
+   </a>
+
+    <hr class="second-line-divider-top">
+    <img src="images/Line_Design.png" class="line-divider">
+    <hr class="second-line-divider-bottom">
+    <p  id="s2" class="page-subtitles" style="margin-top: 5px; margin-bottom: 0px;"> 
         Culinária Internacional
     </p>
     <div class="first-posts">
@@ -76,28 +96,32 @@
             Como surgiu a pizza?
         </p>
     </div>
-    <hr class="first-line-divider">
-    <hr class="line-divider">
-    <p class="page-subtitles" style="margin-top: 5px; margin-bottom: 0px;"> 
+    <hr class="second-line-divider-top">
+    <img src="images/Line_Design.png" class="line-divider">
+    <hr class="second-line-divider-bottom">
+    <p  id="s3" class="page-subtitles" style="margin-top: 5px; margin-bottom: 0px;"> 
         Receitas Vegetarianas e Veganas
     </p>
-    <div class="first-posts">
+    <a class="link" href="pages/ReceitasV/RV Post1.html"><div class="first-posts">
         <img class="image-posts" src="https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-vegetariana-00.jpeg">
         <p class="first-text-posts">
             Uma receita de pizza vegetariana <br>
             Incrível!
         </p>
     </div>
-    <div class="posts">
+    </a>
+    <a class="link" href="pages/ReceitasV/RV Post2.html"><div class="posts">
         <img class="image-posts" src="https://veganandcolors.com/wp-content/uploads/2019/08/c8-1024x576.jpg">
         <p class="text-posts">
             Brownie Vegano: Tão bom quanto o <br> 
             tradicional!
         </p>
     </div>
-    <hr class="first-line-divider">
-    <hr class="line-divider">
-    <p class="page-subtitles" style="margin-top: 5px; margin-bottom: 0px;"> 
+    </a>
+    <hr class="second-line-divider-top">
+    <img src="images/Line_Design.png" class="line-divider">
+    <hr class="second-line-divider-bottom">
+    <p  id="s4" class="page-subtitles" style="margin-top: 5px; margin-bottom: 0px;"> 
         Sobremesas Incríveis
     </p>
     <div class="first-posts">
@@ -114,9 +138,10 @@
             consectetur adipiscing elit
         </p>
     </div>
-    <hr class="first-line-divider">
-    <hr class="line-divider">
-    <p class="page-subtitles" style="margin-top: 5px; margin-bottom: 0px;"> 
+    <hr class="second-line-divider-top">
+    <img src="images/Line_Design.png" class="line-divider">
+    <hr class="second-line-divider-bottom">
+    <p  id="s5" class="page-subtitles" style="margin-top: 5px; margin-bottom: 0px;"> 
         Cozinha saudável
     </p>
     <div class="first-posts">
@@ -133,9 +158,10 @@
             consectetur adipiscing elit
         </p>
     </div>
-    <hr class="first-line-divider">
-    <hr class="line-divider">
-    <p class="page-subtitles" style="margin-top: 5px; margin-bottom: 0px;"> 
+    <hr class="second-line-divider-top">
+    <img src="images/Line_Design.png" class="line-divider">
+    <hr class="second-line-divider-bottom">
+    <p  id="s6" class="page-subtitles" style="margin-top: 5px; margin-bottom: 0px;"> 
         Comida Caseira
     </p>
     <div class="first-posts">
@@ -152,9 +178,10 @@
             consectetur adipiscing elit
         </p>
     </div>
-    <hr class="first-line-divider">
-    <hr class="line-divider">
-    <p class="page-subtitles" style="margin-top: 5px; margin-bottom: 0px;"> 
+    <hr class="second-line-divider-top">
+    <img src="images/Line_Design.png" class="line-divider">
+    <hr class="second-line-divider-bottom">
+    <p  id="s7" class="page-subtitles" style="margin-top: 5px; margin-bottom: 0px;"> 
         Receitas para Ocasiões Especiais
     </p>
     <div class="first-posts">
