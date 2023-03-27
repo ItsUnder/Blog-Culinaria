@@ -389,7 +389,6 @@ transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
       color: black;
       border-radius: 2px;
     }
-
     .link {
       color: black;
       text-decoration-line: none;
@@ -399,7 +398,19 @@ transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
       text-decoration-line: none;
     }
     .dark .line-divider {
-      content: url(images/Line_Design_Dark.png);
+      display: none;
+    }
+    .line-divider-dark {
+      display: none;
+      margin-left: 10px;
+      width: 1570px;
+      height: 52px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      border: none;
+    }
+    .dark .line-divider-dark {
+      display: initial;
     }
     .dark .second-line-divider-top {
       background-color: white;
