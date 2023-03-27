@@ -2,14 +2,14 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css");
 @font-face {
   font-family: NiseSegaSonic;
-  src: url(../../Pacifico-Regular.ttf);
+  src: url(../Pacifico-Regular.ttf);
 }
 html { 
     height: auto;
     width: 100%;
     margin: 0;
     background: none;
-    background-image: url(../../images/container-background.png);
+    background-image: url(../images/container-background.png);
     background-attachment:fixed;
     background-position: left top;
     position:absolute;
