@@ -399,7 +399,7 @@ transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
       text-decoration-line: none;
     }
     .dark .line-divider {
-      content:url(/images/Line_Design_Dark.png);
+      content: url(images/Line_Design_Dark.png);
     }
     .dark .second-line-divider-top {
       background-color: white;
