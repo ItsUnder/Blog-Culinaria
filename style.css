@@ -45,6 +45,9 @@ html {
     border-radius: 10px;
     height: auto;
   }
+@media .background {
+  max-width: auto;
+}
   .space-background {
     z-index: -10;
    }
