@@ -418,3 +418,7 @@ transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
     .dark .second-line-divider-bottom {
       background-color: white;
     } 
+    @viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+    }
