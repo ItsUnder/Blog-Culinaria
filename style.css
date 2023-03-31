@@ -5,8 +5,6 @@
   src: url(Pacifico-Regular.ttf);
 }
 html { 
-    height: auto;
-    width: 100%;
     margin: 0;
     background: none;
     background-image: url(images/container-background.png);
@@ -17,8 +15,8 @@ html {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    height: 100%;
-    width: 100%;
+    height: auto;
+    width: auto;
   }
   body {
     margin: 0;
@@ -45,6 +43,10 @@ html {
     border-radius: 10px;
     height: auto;
   }
+@media screen and (max-width: 481px) {
+  img {max-width: 200px};
+  }
+   
   .space-background {
     z-index: -10;
    }
