@@ -45,9 +45,6 @@ html {
     border-radius: 10px;
     height: auto;
   }
-@media .background {
-  max-width: auto;
-}
   .space-background {
     z-index: -10;
    }
@@ -422,6 +419,45 @@ transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
       background-color: white;
     } 
     @viewport {
-  width: device-width ;
-  zoom: 1.0 ;
+  width: device-width;
+  zoom: 1.0;
     }
+    .moveable-header {
+      top: 0;
+      position: sticky;
+      transition: all 1s;
+      z-index: 20;
+      background: #252525;
+      opacity: 0;
+      display: none;
+    }
+     .show .moveable-header {
+      opacity: 0.7;
+      display: block;
+      }
+      .show .moveable-header:hover {
+       opacity: 1;
+      }
+     .hide .moveable-header {
+      opacity: 0;
+      display: none;
+      }
+     .button-menu-M {
+      float: left;
+      color: white;
+      background: #252525;
+      font-family: "Roboto";
+      font-size: 20px;
+      cursor: pointer;
+      box-shadow: inset 0 0 0 0 #000000;
+      transition: color .1s ease-in-out, box-shadow .3s ease-in-out;
+      border: #252525;
+      border-right: 100px;
+      padding: 7px 10px 7px;
+      overflow: auto;
+      }
+      .button-menu-M:hover {
+      box-shadow: inset 0 300px 0 0 #F09B19;
+      color: black;
+      border-radius: 2px;
+      }

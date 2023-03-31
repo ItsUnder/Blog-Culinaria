@@ -3,13 +3,13 @@
     <link rel="shortcut icon" type="image/x-icon" href="images/logo_blog.png">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1"/> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"/> 
     <title>O Chefe Criativo</title>
     <div class="container-background">
     <div class="container"> 
         <button class="button-theme" onclick="changeThemes()" style="cursor: pointer; float: right;"> Alterar Tema</button>
         <img class="logo" src="images/logo_blog.png">
-        <p class ="page-title">
+        <p class ="page-title" id="h">
             O Chefe Criativo
         </p>
     </div>
@@ -32,6 +32,16 @@
    <div class="button placement">
     </div>
     <body> 
+        <div id="mh" class="moveable-header">
+            <button class="button-menu-M" style="margin-left:10px;" onclick="moveToSubtitles('h')">Destaques</button>
+            <button class="button-menu-M" onclick="moveToSubtitles('s1')">Receitas Fáceis</button>
+            <button class="button-menu-M" onclick="moveToSubtitles('s2')">Culinária Internacional</button>
+            <button class="button-menu-M" onclick="moveToSubtitles('s3')">Receitas Vegetarianas</button>
+            <button class="button-menu-M" onclick="moveToSubtitles('s4')">Sobremesas Incríveis</button>
+            <button class="button-menu-M" onclick="moveToSubtitles('s5')">Cozinha Saudável</button>
+            <button class="button-menu-M" onclick="moveToSubtitles('s6')">Comida Caseira</button>
+            <button class="button-menu-M" onclick="moveToSubtitles('s7')">Ocasiões Especiais</button>
+          </div>
         <p class="page-subtitles" style="margin-top: 5px; margin-bottom: 0px;"> 
             Destaques
         </p>
@@ -86,18 +96,21 @@
     <p  id="s2" class="page-subtitles" style="margin-top: 5px; margin-bottom: 0px;"> 
         Culinária Internacional
     </p>
-    <div class="first-posts">
+    <a class="link" href="pages/CulinariaI/CI Post1.html"><div class="first-posts">
         <img class="image-posts" src="https://t4.ftcdn.net/jpg/03/68/36/95/360_F_368369518_N9KPItZpGEddUwhGtutOn5LEKXYCdF4q.jpg">
         <p class="first-text-posts">
             A história do Petit Gateau
         </p>
     </div>
-    <div class="posts">
+    </a>
+    <a class="link" href="pages/CulinariaI/CI Post2.html"><div class="posts">
         <img class="image-posts" src="https://images7.alphacoders.com/596/596343.jpg">
         <p class="text-posts">
             Como surgiu a pizza?
         </p>
     </div>
+ </a>
+
     <hr class="second-line-divider-top">
     <img src="images/Line_Design.png" class="line-divider">
     <img src="images/Line_Design_Dark.png" class="line-divider-dark">
@@ -128,20 +141,23 @@
     <p  id="s4" class="page-subtitles" style="margin-top: 5px; margin-bottom: 0px;"> 
         Sobremesas Incríveis
     </p>
-    <div class="first-posts">
+    <a class="link" href="pages/SobremesasI/SI Post1.html"><div class="first-posts">
         <img class="image-posts" src="https://img.freepik.com/premium-photo/dark-grey-black-slate-background-texture-stone-background_483511-4120.jpg">
         <p class="first-text-posts">
             Lorem ipsum dolor sit amet, <br>
             consectetur adipiscing elit
         </p>
     </div>
-    <div class="posts">
+    </a>
+    <a class="link" href="pages/SobremesasI/SI Post2.html"><div class="posts">
         <img class="image-posts" src="https://img.freepik.com/premium-photo/dark-grey-black-slate-background-texture-stone-background_483511-4120.jpg">
         <p class="text-posts">
             Lorem ipsum dolor sit amet, <br>
             consectetur adipiscing elit
         </p>
     </div>
+    </a>
+    
     <hr class="second-line-divider-top">
     <img src="images/Line_Design.png" class="line-divider">
     <img src="images/Line_Design_Dark.png" class="line-divider-dark">
@@ -149,20 +165,23 @@
     <p  id="s5" class="page-subtitles" style="margin-top: 5px; margin-bottom: 0px;"> 
         Cozinha saudável
     </p>
-    <div class="first-posts">
+    <a class="link" href="pages/CozinhaS/CS Post1.html"><div class="first-posts">
         <img class="image-posts" src="https://img.freepik.com/premium-photo/dark-grey-black-slate-background-texture-stone-background_483511-4120.jpg">
         <p class="first-text-posts">
             Lorem ipsum dolor sit amet, <br>
             consectetur adipiscing elit
         </p>
     </div>
-    <div class="posts">
+    </a>
+    <a class="link" href="pages/CozinhaS/CS Post2.html"><div class="posts">
         <img class="image-posts" src="https://img.freepik.com/premium-photo/dark-grey-black-slate-background-texture-stone-background_483511-4120.jpg">
         <p class="text-posts">
             Lorem ipsum dolor sit amet, <br>
             consectetur adipiscing elit
         </p>
     </div>
+    </a>
+
     <hr class="second-line-divider-top">
     <img src="images/Line_Design.png" class="line-divider">
     <img src="images/Line_Design_Dark.png" class="line-divider-dark">
@@ -170,20 +189,23 @@
     <p  id="s6" class="page-subtitles" style="margin-top: 5px; margin-bottom: 0px;"> 
         Comida Caseira
     </p>
-    <div class="first-posts">
+    <a class="link" href="pages/ComidaC/CC Post1.html"><div class="first-posts">
         <img class="image-posts" src="https://img.freepik.com/premium-photo/dark-grey-black-slate-background-texture-stone-background_483511-4120.jpg">
         <p class="first-text-posts">
             Lorem ipsum dolor sit amet, <br>
             consectetur adipiscing elit
         </p>
     </div>
-    <div class="posts">
+    </a>
+    <a class="link" href="pages/ComidaC/CC Post2.html"><div class="posts">
         <img class="image-posts" src="https://img.freepik.com/premium-photo/dark-grey-black-slate-background-texture-stone-background_483511-4120.jpg">
         <p class="text-posts">
             Lorem ipsum dolor sit amet, <br>
             consectetur adipiscing elit
         </p>
     </div>
+    </a>
+
     <hr class="second-line-divider-top">
     <img src="images/Line_Design.png" class="line-divider">
     <img src="images/Line_Design_Dark.png" class="line-divider-dark">
@@ -191,20 +213,22 @@
     <p  id="s7" class="page-subtitles" style="margin-top: 5px; margin-bottom: 0px;"> 
         Receitas para Ocasiões Especiais
     </p>
-    <div class="first-posts">
+    <a class="link" href="pages/ReceitasOE/ROE Post1.html"><div class="first-posts">
         <img class="image-posts" src="https://img.freepik.com/premium-photo/dark-grey-black-slate-background-texture-stone-background_483511-4120.jpg">
         <p class="first-text-posts">
             Lorem ipsum dolor sit amet, <br>
             consectetur adipiscing elit
         </p>
     </div>
-    <div class="posts">
+    </a>
+    <a class="link" href="pages/ReceitasOE/ROE Post2.html"><div class="posts">
         <img class="image-posts" src="https://img.freepik.com/premium-photo/dark-grey-black-slate-background-texture-stone-background_483511-4120.jpg">
         <p class="text-posts">
             Lorem ipsum dolor sit amet, <br>
             consectetur adipiscing elit
         </p>
     </div>
+    </a>
     </body>
    </div>
 </html>
