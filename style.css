@@ -43,10 +43,6 @@ html {
     border-radius: 10px;
     height: auto;
   }
-@media screen and (max-width: 481px) {
-  img {max-width: 200px};
-  }
-   
   .space-background {
     z-index: -10;
    }
