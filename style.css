@@ -15,8 +15,8 @@ html {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    height: auto;
-    width: auto;
+    height: 100%;
+    width: 100%;
   }
   body {
     margin: 0;
