@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <title>O Chefe Criativo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <div class="container-background">
     <div class="container"> 
         <button class="button-theme" onclick="changeThemes()" style="cursor: pointer; float: right;"> Alterar Tema</button>
@@ -13,13 +14,13 @@
         </p>
     </div>
     <div class="menu-container">
-        <button class="button-menu" style="margin-left:10px" onclick="moveToSubtitles('s1')">Receitas Fáceis</button>
-        <button class="button-menu" style="margin-left:160px" onclick="moveToSubtitles('s2')">Culinária Internacional</button>
-        <button class="button-menu" style="margin-left:370px" onclick="moveToSubtitles('s3')">Receitas Vegetarianas</button>
-        <button class="button-menu" style="margin-left:580px" onclick="moveToSubtitles('s4')">Sobremesas Incríveis</button>
-        <button class="button-menu" style="margin-left:780px" onclick="moveToSubtitles('s5')">Cozinha Saudável</button>
-        <button class="button-menu" style="margin-left:948px" onclick="moveToSubtitles('s6')">Comida Caseira</button>
-        <button class="button-menu" style="margin-left:1098px" onclick="moveToSubtitles('s7')">Ocasiões Especiais</button>
+        <button class="button-menu" style="margin-left: 0.4%" onclick="moveToSubtitles('s1')">Receitas Fáceis</button>
+        <button class="button-menu" style="margin-left: 10%" onclick="moveToSubtitles('s2')">Culinária Internacional</button>
+        <button class="button-menu" style="margin-left: 23.3%" onclick="moveToSubtitles('s3')">Receitas Vegetarianas</button>
+        <button class="button-menu" style="margin-left: 36.4%" onclick="moveToSubtitles('s4')">Sobremesas Incríveis</button>
+        <button class="button-menu" style="margin-left: 49.1%" onclick="moveToSubtitles('s5')">Cozinha Saudável</button>
+        <button id="bt1" class="button-menu" style="margin-left: 59.7%" onclick="moveToSubtitles('s6')">Comida Caseira</button>
+        <button id="bt2" class="button-menu" style="margin-left: 69.3%" onclick="moveToSubtitles('s7')">Ocasiões Especiais</button>
       </div>
     <hr class="container-line"> 
     </div>
@@ -44,23 +45,38 @@
         <p class="page-subtitles" style="margin-top: 5px; margin-bottom: 0px;"> 
             Destaques
         </p>
-        <a class="link" href="pages/Highlights/highlight1.html"> <div class="highlights">
-        <img class="image-highlights" style="margin-left: 70px; margin-bottom: 0px;" src="https://thumbs.dreamstime.com/b/summer-bbq-food-table-hot-dog-hamburger-buffet-top-down-view-over-dark-slate-background-188460951.jpg">
+        <a id="h1" class="link" href="pages/Highlights/highlight1.html"> <div class="highlights">
+        <img class="image-highlights" style="margin-left: 4.5%; margin-bottom: 0%;" src="https://thumbs.dreamstime.com/b/summer-bbq-food-table-hot-dog-hamburger-buffet-top-down-view-over-dark-slate-background-188460951.jpg">
         <p class="text-highlights">
             Aprenda a fazer esta deliciosa receita!
         </p>
     </div>
     </a>
-    <a class="link" href="pages/Highlights/highlight2.html"><div class="highlights" style="position: absolute; top: 60px; left: 600px">
-        <img class="image-highlights" style="margin-left: 70px; margin-top: 0px; max-width: 800px;" src="https://www.assai.com.br/sites/default/files/styles/blog_destaque/public/blog/5_receitas_faceis_-_e_gostosas_-_para_quem_e_iniciante_na_cozinha01.jpg?itok=A5nbiBAP">
-        <p class="text-highlights" style="right:-20px">
+    <a id="h2" class="link" href="pages/Highlights/highlight2.html"><div class="highlights" style="position: absolute; top: 1%; left: 38%">
+        <img class="image-highlights" style="margin-left: 7.5%; margin-top: 0px; max-width: 83%;" src="https://www.assai.com.br/sites/default/files/styles/blog_destaque/public/blog/5_receitas_faceis_-_e_gostosas_-_para_quem_e_iniciante_na_cozinha01.jpg?itok=A5nbiBAP">
+        <p class="text-highlights" style="margin-left: 7.5%;">
            Receitas Fáceis para iniciantes: 10 pratos básicos
         </p>
     </div>
     </a>
-    <a class="link" href="pages/Highlights/highlight3.html"><div class="highlights" style="position: absolute; top: 400px">
-        <img class="image-highlights" style="margin-left: 70px; margin-top: 0px;" src="https://media.gazetadopovo.com.br/bomgourmet/2019/07/comida-caipira-a5c1ed80.jpg">
-        <p class="text-highlights">
+    <a id="hm1" class="link" href="pages/Highlights/highlight2.html"><div class="highlights" style="float: left; top: 1%; left: 38%">
+        <img class="image-highlights" style="margin-left: 7.5%; margin-top: 0px; max-width: 83%;" src="https://www.assai.com.br/sites/default/files/styles/blog_destaque/public/blog/5_receitas_faceis_-_e_gostosas_-_para_quem_e_iniciante_na_cozinha01.jpg?itok=A5nbiBAP">
+        <p class="text-highlights" style="margin-left: 7.5%;">
+           Receitas Fáceis para iniciantes: 10 pratos básicos
+        </p>
+    </div>
+    </a>
+    <a id="hm2" class="link" href="pages/Highlights/highlight3.html"><div class="highlights" style="top: 1%; left: 38%">
+        <img class="image-highlights" style="margin-left: 7.5%; margin-top: 0px; max-width: 83%; margin-bottom: 0%;" src="https://media.gazetadopovo.com.br/bomgourmet/2019/07/comida-caipira-a5c1ed80.jpg">
+        <p class="text-highlights" style="margin-left: 7.5%;">
+            Veja as tendências que devem bombar na <br>
+            gastronomia em 2023
+        </p>
+    </div>
+    </a>
+    <a id="h3" class="link" href="pages/Highlights/highlight3.html"><div class="highlights" style="position: absolute; top: 8.1%">
+        <img class="image-highlights" style="margin-left: 7%; margin-top: 0%; max-width: 40%;" src="https://media.gazetadopovo.com.br/bomgourmet/2019/07/comida-caipira-a5c1ed80.jpg">
+        <p class="text-highlights" style="margin-left: 7.5%;">
             Veja as tendências que devem bombar na <br>
             gastronomia em 2023
         </p>
@@ -69,7 +85,7 @@
     <div class="space-background">
     </div>
     
-    <p id="s1" class="page-subtitles" style="margin-top: 400px; margin-bottom: 0px;"> 
+    <p id="s1" class="page-subtitles" style="margin-top: 26%; margin-bottom: 0px;"> 
         Receitas Fáceis para iniciantes
     </p>
     <a class="link" href="pages/ReceitasF/RF Post1.html"><div class="first-posts"> 

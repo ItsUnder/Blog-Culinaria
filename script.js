@@ -24,7 +24,7 @@ function changeThemes() {
 
 var ScrollFunction = function() {
    var y = window.scrollY;
-   if (y >= 200) {
+   if (y >= 500) {
     document.body.classList.add("show");
     document.body.classList.remove("hide");
    } else {

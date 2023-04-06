@@ -38,27 +38,24 @@ html {
     -o-background-size: cover;
     height: auto;
     width: 98%;
-    margin-right:40px;
-    margin-left: 13px;
+    margin-left: 0.8%;
     border-radius: 10px;
-    height: auto;
   }
   .space-background {
     z-index: -10;
    }
    .logo {
-    width: 111.9px;
-    height: 87.8px;
+    width: 7%;
+    height: 5%;
     float: left;
     z-index: -10;
-
    }
   .page-title {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-size: 25px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    font-size: 160%;
     text-align: left;
-    padding: 20px;
+    padding: 1.2%;
     color: #F09B19;
     font-family: NiseSegaSonic;
    }
@@ -82,11 +79,11 @@ html {
  .menu-container {
   background: linear-gradient(230.65deg, rgb(63, 63, 61), #4e4e4d 27.49%, #252525 83.19%);
   background-size: 400% 400%;
-  height: 36px;
+  height: 26.4%;
   width: 100%;
   margin-top: 0;
   margin-bottom: 0;
-  top:100px;
+  top: 100px;
   position: fixed;
  }
   .container-line {
@@ -130,7 +127,7 @@ html {
     border: 2px solid #151516;
     color: black;
     display: inline-block;
-    font-size: 12px;
+    font-size: 82%;
     line-height: 15px;
     padding: 18px 18px 17px;
     text-decoration: none;
@@ -142,8 +139,8 @@ html {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
     font-family: "Roboto";
     font-weight: 400;
-    margin-right: 10px;
-    margin-top: 10px;
+    margin-right: 0.5%;
+    margin-top: 0.5%;
    }
  .button-placement
  { 
@@ -198,8 +195,8 @@ html {
   } 
 
 .page-subtitles {
- font-size: 30px;
- margin-left: 40px;
+ font-size: 200%;
+ margin-left: 3%;
  font-family: NiseSegaSonic;
 }
 
@@ -218,7 +215,7 @@ html {
   transition: color .1s ease-in-out, box-shadow .3s ease-in-out;
 }
 .image-highlights {
-   max-width: 460px;
+   max-width: 30%;
    height: auto;
    border-radius: 10px;
    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.5);
@@ -234,8 +231,8 @@ html {
   transition: color .1s ease-in-out, box-shadow .3s ease-in-out;
 }
 .text-highlights {
-margin-left: 75px;
-font-size: 20px;
+margin-left: 5%;
+font-size: 124%;
 margin-top: 2px;
 box-shadow: inset 0 0 0 0 #e1e78f;
 padding: 0 .25rem;
@@ -360,8 +357,8 @@ transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
     }
     .line-divider {
       margin-left: 10px;
-      width: 1570px;
-      height: 52px;
+      max-width: 100%;
+      height: auto;
       margin-top: 0px;
       margin-bottom: 0px;
       border: none;
@@ -373,11 +370,11 @@ transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
      color: white;
      background: #252525;
      display: inline-block;
-     font-size: 20px;
+     font-size: 127%;
      font-family: "Roboto";
      padding: 7px 2px 7px;
      position:absolute;
-     top: -6px;
+     top: -20%;
      cursor: pointer;
      box-shadow: inset 0 0 0 0 #000000;
      transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
@@ -401,8 +398,8 @@ transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
     .line-divider-dark {
       display: none;
       margin-left: 10px;
-      width: 1570px;
-      height: 52px;
+      max-width: 100%;
+      height: auto;
       margin-top: 0px;
       margin-bottom: 0px;
       border: none;
@@ -458,4 +455,60 @@ transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
       box-shadow: inset 0 300px 0 0 #F09B19;
       color: black;
       border-radius: 2px;
+      }
+      #hm1 {
+        display: none;
+      }
+      #hm2 {
+        display: none;
+      }
+      @media only screen and (max-width: 600px) {
+        html {
+          zoom: 0.4;
+        }
+        .background {
+          top: 62.1%;
+        }
+        .image-highlights {
+          max-width: 400px;
+        }
+        #h1 {
+          float: left;
+          margin-left: 25px;
+        }
+        #h2 {
+          display: none;
+        }
+        #h3 {
+          display: none;
+          max-width: 500px;
+          }
+          #hm1 {
+            float: left;
+            display: block;
+            max-width: 480px;
+          }
+          #hm2 {
+            display: block;
+            max-width: 600px;
+            margin-bottom: 0;
+          }
+          .menu-container {
+            display: none;
+          }
+         .button-menu {
+          display: none;
+        }
+        #s1 {
+          margin-top: 0;
+        }
+        .text-posts {
+          font-size: 24px;
+        }
+        .first-text-posts {
+          font-size: 24px;
+        }
+        .button-theme {
+          font-size: 19px;
+        }
       }
