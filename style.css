@@ -45,8 +45,8 @@ html {
     z-index: -10;
    }
    .logo {
-    width: 7%;
-    height: 5%;
+    max-width: 7%;
+    height: auto;
     float: left;
     z-index: -10;
    }
@@ -456,6 +456,9 @@ transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
       color: black;
       border-radius: 2px;
       }
+      #s1 {
+        margin-top: 26%; 
+      }
       #hm1 {
         display: none;
       }
@@ -466,6 +469,13 @@ transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
         html {
           zoom: 0.4;
         }
+        .logo {
+          max-width: 10%;
+          height: auto;
+         }
+        .page-title {
+         font-size:26px;
+         }
         .background {
           top: 62.1%;
         }
@@ -491,7 +501,8 @@ transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
           #hm2 {
             display: block;
             max-width: 600px;
-            margin-bottom: 0;
+            margin-bottom: 0px;
+            margin-top: 0px;
           }
           .menu-container {
             display: none;
@@ -500,7 +511,7 @@ transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
           display: none;
         }
         #s1 {
-          margin-top: 0;
+          margin-top: 104px;
         }
         .text-posts {
           font-size: 24px;
