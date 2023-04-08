@@ -17,7 +17,7 @@ html {
     -o-background-size: cover;
     height: 100%;
     width: 100%;
-  }
+   }
   body {
     margin: 0;
     font-family: "Playfair", sans-serif;
@@ -456,6 +456,111 @@ transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
       color: black;
       border-radius: 2px;
       }
+      .cookie-screen {
+        max-width: 100%;
+        background-color: white;
+        height: 200%;
+        z-index: 9999;
+        position: fixed;
+        top: 180%;
+        right: 38%;
+        left: 35%;
+        font-size: 130%;
+        color: rgb(85, 85, 85);
+        border-radius: 2%;
+        box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.5);
+        padding-top: 1%;
+        filter: blur(0px);
+      }
+      .cookie-screen-2color {
+        width: 25%; 
+        height: 100%; 
+        z-index: -2; 
+        position: absolute; 
+        background-color: #40375bbd; 
+        top: 0%;
+        right: 0%;
+      }
+      .blur-background {
+        background-color: rgb(165, 165, 165);
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+        filter: blur(2px);
+        filter: opacity(0.4);
+        position: absolute;
+      }
+      .button-cookie-screen {
+        margin-top: 9%;
+        margin-left: 1%;
+        background-color: #495070;
+        color: white;
+        border: 0;
+        padding: 4.6%;
+        padding-left: 23%;
+        padding-right: 20.4%;
+        cursor: pointer;
+        box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.5);
+        float: left;
+      }
+      .button-cookie-screen:hover {
+        animation: move 0.2s;
+        animation-fill-mode: forwards;
+        background-color: #576088;
+      }
+      @keyframes move {
+        0% {
+        }
+        50% {
+          margin-top: 8%;
+        }
+        75% {
+          margin-top: 7%;
+        }
+        100% {
+          margin-top: 7%;
+        }
+      }
+      .button-cookie-screen-D {
+        bottom: 2%;
+        right: 1%;
+        background-color: #40375b96;
+        color: white;
+        border: 0;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        max-width: 23%;
+        position: absolute;
+        cursor: pointer;
+        box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.5);
+      } 
+      .button-cookie-screen-D:hover {
+        animation: move2 0.2s;
+        animation-fill-mode: forwards;
+        background-color: #574c7996;
+      }
+      @keyframes move2 {
+        0% {
+        }
+        50% {
+          bottom: 3%;
+        }
+        75% {
+          bottom: 4%;
+        }
+        100% {
+          bottom: 4%;
+        }
+      }
+      .cookie-img {
+        max-width: 19%;
+        margin-left: 10%; 
+        position: absolute; 
+        top: 3%; 
+        right: 2%;  
+        box-shadow: 1px 2px 3px 2px #00000083;
+        border-radius: 90px;
+      }
       #s1 {
         margin-top: 26%; 
       }
@@ -470,7 +575,7 @@ transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
           zoom: 0.4;
         }
         .logo {
-          max-width: 10%;
+          max-width: 9.8%;
           height: auto;
          }
         .page-title {
@@ -520,6 +625,21 @@ transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
           font-size: 24px;
         }
         .button-theme {
+          font-size: 19px;
+        }
+        .cookie-screen {
+          width: 430px;
+          left: 30%;
+          max-width: 600px;
+        }
+        .button-cookie-screen {
+          font-size: 19px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          padding-right: 40px ;
+          padding-left: 40px;
+        }
+        .button-cookie-screen-D {
           font-size: 19px;
         }
       }

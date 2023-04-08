@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html> 
+<html id="html"> 
     <link rel="shortcut icon" type="image/x-icon" href="images/logo_blog.png">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
@@ -14,6 +14,7 @@
         </p>
     </div>
     <div class="menu-container">
+        <div id="btns">
         <button class="button-menu" style="margin-left: 0.4%" onclick="moveToSubtitles('s1')">Receitas Fáceis</button>
         <button class="button-menu" style="margin-left: 10%" onclick="moveToSubtitles('s2')">Culinária Internacional</button>
         <button class="button-menu" style="margin-left: 23.3%" onclick="moveToSubtitles('s3')">Receitas Vegetarianas</button>
@@ -22,6 +23,7 @@
         <button id="bt1" class="button-menu" style="margin-left: 59.7%" onclick="moveToSubtitles('s6')">Comida Caseira</button>
         <button id="bt2" class="button-menu" style="margin-left: 69.3%" onclick="moveToSubtitles('s7')">Ocasiões Especiais</button>
       </div>
+    </div>
     <hr class="container-line"> 
     </div>
     <div class="space-background">
@@ -32,6 +34,7 @@
    <div class="button placement">
     </div>
     <body> 
+        <div id="bb" class="blur-background" style="display: none;"></div>
         <div id="mh" class="moveable-header">
             <button class="button-menu-M" style="margin-left:10px;" onclick="moveToSubtitles('h')">Destaques</button>
             <button class="button-menu-M" onclick="moveToSubtitles('s1')">Receitas Fáceis</button>
@@ -45,6 +48,18 @@
         <p class="page-subtitles" style="margin-top: 5px; margin-bottom: 0px;"> 
             Destaques
         </p>
+        <div id="cs" class="cookie-screen" style="display: none;"> 
+           <a style="font-weight: 300; margin-top: 20px; margin-left: 3px; font-size:25px; font-family: Arial, Helvetica, sans-serif; color: black; margin-bottom: 300%;">Nós usamos Cookies!</a> <img class="cookie-img" src="https://pngimg.com/d/cookie_PNG13656.png">
+           <div class="cookie-screen-2color"></div>
+           <br>
+           <br>
+            Para melhorar sua experiência, <br> usamos Cookies para personalizar <br>
+            nosso site e selecionar conteúdos <br>
+            que você pode estar interessado! <br>
+            <a style="cursor: pointer; text-decoration-line: underline; text-decoration-color: rgb(39, 39, 39);">Política de Privacidade</a> <br>
+            <button class="button-cookie-screen" onclick="unlockCookieScreen()">Eu aceito os cookies</button>
+            <button class="button-cookie-screen-D" onclick="unlockCookieScreen()">Eu não preciso dos seus cookies</button>
+          </div>
         <a id="h1" class="link" href="pages/Highlights/highlight1.html"> <div class="highlights">
         <img class="image-highlights" style="margin-left: 4.5%; margin-bottom: 0%;" src="https://thumbs.dreamstime.com/b/summer-bbq-food-table-hot-dog-hamburger-buffet-top-down-view-over-dark-slate-background-188460951.jpg">
         <p class="text-highlights">

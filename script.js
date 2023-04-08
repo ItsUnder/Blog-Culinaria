@@ -1,4 +1,5 @@
 let darkMode = localStorage.getItem("dark-mode");
+let cookie = localStorage.getItem("cookie");
 
 function changeThemes() {
   darkMode = localStorage.getItem("dark-mode");
@@ -17,9 +18,21 @@ function changeThemes() {
       changeThemes();
       localStorage.setItem("dark-mode", "enabled");
     }
+    if (cookie != "done") {
+      document.getElementById("cs").style.display = "block";
+      document.getElementById("bb").style.display = "block";
+      document.getElementById("html").style.overflow = "hidden";
+      console.log("BOOM");
+  }
+  }
+  function unlockCookieScreen() {
+    document.getElementById("cs").style.display = "none";
+    document.getElementById("bb").style.display = "none";
+    document.getElementById("html").style.overflow = "visible";
+    localStorage.setItem("cookie", "done");
   }
  function moveToSubtitles(id) {
-  document.getElementById(id).scrollIntoView({  block: "center", behavior: "smooth",});
+    document.getElementById(id).scrollIntoView({  block: "center", behavior: "smooth",});
   }
 
 var ScrollFunction = function() {
