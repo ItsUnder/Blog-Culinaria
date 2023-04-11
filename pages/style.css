@@ -466,3 +466,59 @@ transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
       color: black;
       border-radius: 17px;
       }
+      .titleError404 {
+        font-size: 100px; 
+        text-align: center; 
+        margin-top: 5%;
+      }
+      .imageError404 {
+        display: none;
+      }
+      .dark .imageError404 {
+        display: block;
+      }
+      .dark .Dark-imageError404 {
+        display: none;
+      }
+      .buttonError404 {
+      position: relative;
+      overflow: hidden;
+      border: 2px solid #151516;
+      color: rgb(228, 228, 228);
+      display: flex;
+      font-size: 17px;
+      line-height: 15px;
+      padding: 18px 68px 17px;
+      text-decoration: none;
+      cursor: pointer;
+      background: rgb(58, 57, 57);
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+      font-family: "Roboto";
+      font-weight: 400;
+      margin: 0 auto;
+      margin-bottom: 2%;
+      margin-top: 3%;
+      }
+      .buttonError404:hover {
+        animation: move 0.2s;
+        animation-fill-mode: forwards;
+      }
+      @keyframes move {
+        0% {
+        }
+        50% {
+          margin-top: 2.5%;
+          margin-bottom: 2.5%;
+        }
+        75% {
+          margin-top: 2.5%;
+          margin-bottom: 2.5%;
+        }
+        100% {
+          margin-top: 2.5%;
+          margin-bottom: 2.5%;
+        }
+      }
