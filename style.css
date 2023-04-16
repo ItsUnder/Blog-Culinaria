@@ -207,7 +207,7 @@ html {
   cursor: pointer;
 }
 .highlights:hover .text-highlights {
-  box-shadow: inset 449px 0 0 0 #e1e78f;
+  box-shadow: inset 320px 0 0 0 #e1e78f;
 }
 .highlights:hover .image-highlights {
   filter: grayscale(0%);
