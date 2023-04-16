@@ -110,7 +110,7 @@ html {
     background-color: #484E5f;
   }
   .dark .highlights:hover .text-highlights {
-    box-shadow: inset 449px 0 0 0 rgb(84, 112, 112);
+    box-shadow: inset 320px 0 0 0 rgb(84, 112, 112);
   }
   .dark .posts:hover .text-posts {
     box-shadow: inset 323px 0 0 0  rgb(84, 112, 112);
