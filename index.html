@@ -22,6 +22,12 @@
         <button class="button-menu" style="margin-left: 49.1%" onclick="moveToSubtitles('s5')">Cozinha Saudável</button>
         <button id="bt1" class="button-menu" style="margin-left: 59.7%" onclick="moveToSubtitles('s6')">Comida Caseira</button>
         <button id="bt2" class="button-menu" style="margin-left: 69.3%" onclick="moveToSubtitles('s7')">Ocasiões Especiais</button>
+        <button id="btS" class="button-menu" style="margin-left: 90.3%" onclick="openSignScreen()">Cadastrar</button>
+        <button id="btL" class="button-menu" style="margin-left: 96%" onclick="openLoginScreen()">Logar</button>
+        <div class="profile-slv" onclick="openModifyScreen()">
+            <a id="name-slv" class="name-profile-slv" style="display: none;"> </a>
+           <img id="image-slv" class="image-profile-slv" style="display: none;">
+        </div>
       </div>
     </div>
     <hr class="container-line"> 
@@ -30,10 +36,10 @@
     </div>
     <br>
     <br>
-    <div class="background">
    <div class="button placement">
     </div>
     <body> 
+        <div class="background">
         <div id="bb" class="blur-background" style="display: none;"></div>
         <div id="mh" class="moveable-header">
             <button class="button-menu-M" style="margin-left:10px;" onclick="moveToSubtitles('h')">Destaques</button>
@@ -48,18 +54,95 @@
         <p class="page-subtitles" style="margin-top: 5px; margin-bottom: 0px;"> 
             Destaques
         </p>
-        <div id="cs" class="cookie-screen" style="display: none;"> 
-           <a style="font-weight: 300; margin-top: 20px; margin-left: 3px; font-size:25px; font-family: Arial, Helvetica, sans-serif; color: black; margin-bottom: 300%;">Nós usamos Cookies!</a> <img class="cookie-img" src="https://pngimg.com/d/cookie_PNG13656.png">
-           <div class="cookie-screen-2color"></div>
-           <br>
-           <br>
-            Para melhorar sua experiência, <br> usamos Cookies para personalizar <br>
-            nosso site e selecionar conteúdos <br>
-            que você pode estar interessado! <br>
-            <a href="pages/Error404.html" style="cursor: pointer; text-decoration-line: underline; text-decoration-color: rgb(39, 39, 39); color: black;">Política de Privacidade</a> <br>
-            <button class="button-cookie-screen" onclick="unlockCookieScreen()">Eu aceito os cookies</button>
-            <button class="button-cookie-screen-D" onclick="unlockCookieScreen()">Eu não preciso dos seus cookies</button>
-          </div>
+        
+        <div id="ss" class="sign-screen" style="display: none;"> 
+            <a class="sign-title">
+                Cadastrar
+            </a><br>
+            <a href="pages/Error404.html" style="font-weight: 200; margin-left:8%; cursor: pointer; text-decoration-line: underline; text-decoration-color: rgb(39, 39, 39); color: black;">Política de Privacidade</a> <br>
+            <div class="center">
+                <a class="input-label" style="top:25%; position: fixed;"> 
+                    Email
+                </a>
+            <input type="text" id="emailInput2" class="email-input2" placeholder="Exemplo@email.com" size="25"> <br>
+            <a class="input-label" style="top:45%; position: fixed;"> 
+                Senha
+            </a>
+            <input type="text" id="passwordInput" class="password-input" placeholder="Senha" size="25">
+            <br>
+            <br>
+            <a class="sign-to-login" style="cursor: pointer;" onclick="openLoginScreen()">Já tem uma conta? Entre aqui</a>
+            <button class="sign-button" style="top:75%; position: fixed;" onclick="signSystem()">Cadastrar</button>
+            </div>
+           </div>
+           
+           <div id="sl" class="sign-screen" style="display: none;"> 
+            <a class="sign-title">
+                Logar
+            </a><br>
+            <a href="pages/Error404.html" style="font-weight: 200; margin-left:8%; cursor: pointer; text-decoration-line: underline; text-decoration-color: rgb(39, 39, 39); color: black;">Política de Privacidade</a> <br>
+            <div class="center">
+                <a class="input-label" style="top:25%; position: fixed;"> 
+                    Email
+                </a>
+            <input type="text" id="emailInput3" class="email-input2" placeholder="Exemplo@email.com" size="25"> <br>
+            <a class="input-label" style="top:45%; position: fixed;"> 
+                Senha
+            </a>
+            <input type="text" id="passwordInput2" class="password-input" placeholder="Senha" size="25">
+            <br>
+            <br>
+            <a class="sign-to-login" style="cursor: pointer;" onclick="openSignScreen()">Não tem uma conta? Crie aqui</a>
+            <button class="sign-button" style="top:75%; position: fixed;" onclick="loginSystem()">Logar</button>
+            </div>
+           </div>
+           
+           <div id="sc" class="sign-screen" style="display: none;"> 
+            <a class="sign-title">
+                Customize seu perfil!
+            </a><br>
+            <button class="leave-button" style="top:75%; position: fixed; margin-left: 2%;" onclick="leaveAcc()">Sair</button>
+            <div class="center">
+                <a class="input-label" style="top:25%; position: fixed;"> 
+                    Nome
+                </a>
+            <input type="text" id="usernameInput" class="email-input2" placeholder="Coloque um nome" size="25"> <br>
+            <a class="input-label" style="top:45%; position: fixed;"> 
+                Imagem de Perfil
+            </a>
+            <input type="text" id="imageInput" class="password-input" placeholder="Coloque um link de uma imagem" size="25">
+            <br>
+            <br>
+            <button class="sign-button" style="top:75%; position: fixed;" onclick="modifySystem()">Mudar</button>
+            </div>
+           </div>
+
+          <div id="cs" class="cookie-screen" style="display: none;"> 
+            <a style="font-weight: 300; margin-top: 20px; margin-left: 3px; font-size:25px; font-family: Arial, Helvetica, sans-serif; color: black; margin-bottom: 300%;">Nós usamos Cookies!</a> <img class="cookie-img" src="https://pngimg.com/d/cookie_PNG13656.png">
+            <div class="cookie-screen-2color"></div>
+            <br>
+            <br>
+             Para melhorar sua experiência, <br> usamos Cookies para personalizar <br>
+             nosso site e selecionar conteúdos <br>
+             que você pode estar interessado! <br>
+             <a href="pages/Error404.html" style="cursor: pointer; text-decoration-line: underline; text-decoration-color: rgb(39, 39, 39); color: black;">Política de Privacidade</a> <br>
+             <button class="button-cookie-screen" onclick="unlockCookieScreen()">Eu aceito os cookies</button>
+             <button class="button-cookie-screen-D" onclick="unlockCookieScreen()">Eu não preciso dos seus cookies</button>
+           </div>
+           
+           <div id="es" class="email-screen" style="display: none;"> 
+            <a style="font-weight: 300; margin-top: 20px; margin-left: 3px; font-size:25px; font-family: Arial, Helvetica, sans-serif; color: black; margin-bottom: 300%;">Hey!</a> <img class="email-img" src="https://cdn-icons-png.flaticon.com/512/4470/4470631.png">
+            <div class="email-screen-2color"></div>
+            <br>
+            <br>
+             Você gostaria de saber quando <br>
+             possuimos novas postagens? <br>
+             Diga seu email e nós te avisamos! <br>
+             <a href="pages/Error404.html" style="cursor: pointer; text-decoration-line: underline; text-decoration-color: rgb(39, 39, 39); color: black;">Política de Privacidade</a> <br>
+             <input type="text" id="emailInput" class="email-input" placeholder="Exemplo@email.com" size="25">
+             <button class="button-email-screen" onclick="unlockEmailScreen()">Aceitar</button>
+             <button class="button-email-screen-D" onclick="unlockEmailScreen()">Não, obrigado</button>
+           </div>
         <a id="h1" class="link" href="pages/CulinariaI/CI Post1.html"> <div class="highlights">
         <img id="h1img" class="image-highlights" style="margin-left: 4.5%; margin-bottom: 0%;" src="https://t4.ftcdn.net/jpg/03/68/36/95/360_F_368369518_N9KPItZpGEddUwhGtutOn5LEKXYCdF4q.jpg">
         <p class="text-highlights">
@@ -229,7 +312,6 @@
         </p>
     </div>
     </a>
-
     <hr class="second-line-divider-top">
     <img src="images/Line_Design.png" class="line-divider">
     <img src="images/Line_Design_Dark.png" class="line-divider-dark">
@@ -251,6 +333,34 @@
         </p>
     </div>
     </a>
-    </body>
-   </div>
+    <div class="credits">
+    <p class="credits-text">
+        <img src="images/logo_blog.png" style="max-width: 8%;"> <br>
+        <b>Créditos</b>
+        <br>
+        <br>
+        <a style="cursor: pointer; text-decoration-line: underline;" onclick="location.href= 'https://github.com/ItsUnder'">Site <b>criado</b> por Matheus Mariano Euzébio</a> <br>
+        <br>
+        <a style="cursor:pointer; text-decoration-line: underline;" onclick="location.href= 'https://instagram.com/__jesuscaio__?igshid=ZDdkNTZiNTM='"><b>Design</b> por Caio Marcos <br></a>
+        <br> 
+        <b>Escritores:</b> <br>
+            Eduardo <br>
+            Gregory <br>
+            Julia Rafaela <br>
+            Filipe <br>
+            Beatriz <br>
+            Maria Eduarda <br>
+            Pedro <br>
+            Matheus M <br>
+            Maria Luiza Castro <br>
+            Taina <br>
+            Julia Gabriele <br>
+            Ane Cardine <br>
+            Evely <br>
+            Geovanny <br>
+            Tathyane <br>
+    </p>
+    </div>
+</div>
+</body>
 </html>
