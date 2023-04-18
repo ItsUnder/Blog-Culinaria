@@ -124,6 +124,20 @@ function changeThemes() {
     document.getElementById("bb").style.display = "none";
     setProfile();
     location.reload();
+    } else if (document.getElementById('usernameInput').value != '')  {
+    localStorage.setItem("username", document.getElementById('usernameInput').value);
+    document.getElementById("sc").style.display = "none";
+    document.getElementById("html").style.overflow = "visible";
+    document.getElementById("bb").style.display = "none";
+    setProfile();
+    location.reload();
+    } else if (document.getElementById('imageInput').value != '') {
+      localStorage.setItem("image", document.getElementById('imageInput').value);
+      document.getElementById("sc").style.display = "none";
+      document.getElementById("html").style.overflow = "visible";
+      document.getElementById("bb").style.display = "none";
+      setProfile();
+      location.reload();
     } else {
       document.getElementById('imageInput').placeholder = "Coloque um link de uma imagem!";
       document.getElementById('imageInput').value = "";
