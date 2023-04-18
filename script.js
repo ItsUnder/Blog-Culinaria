@@ -152,6 +152,13 @@ function changeThemes() {
       document.getElementById("errorMessage").style.display = "block";
   }
   }
+  function closeWindows() {
+    document.getElementById("sl").style.display = "none";
+    document.getElementById("ss").style.display = "none";
+    document.getElementById("sc").style.display = "none";
+    document.getElementById("html").style.overflow = "visible";
+    document.getElementById("bb").style.display = "none";
+  }
  function moveToSubtitles(id) {
     document.getElementById(id).scrollIntoView({  block: "center", behavior: "smooth",});
   }

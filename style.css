@@ -745,6 +745,11 @@ font-family: 'Cabin', sans-serif;
           animation-fill-mode: forwards;
           background-color: rgb(83, 82, 82);;
         }
+        .back {
+          right: 2%;
+          position: fixed;
+          cursor: pointer;
+        }
         .leave-button {
           border: 2px solid #151516;
           color: rgb(228, 228, 228);
